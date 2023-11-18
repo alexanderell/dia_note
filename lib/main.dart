@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:progprojekt/views/note_view.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,7 +15,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
           brightness: Brightness.dark
       ),
-      home: Scaffold(),
+      home: const NoteView(),
     );
   }
 }
