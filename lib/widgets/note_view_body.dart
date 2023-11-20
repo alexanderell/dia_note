@@ -1,9 +1,16 @@
+import 'package:flutter/material.dart';
+
 class NoteViewBody extends StatelessWidget{
-  const NoteViewBody({Key? key}) : super(key: key);
+  const NoteViewBody({super.key});
 
   @override
   Widget build(BuildContext context){
 
-    return Scaffold();
+    return Column(
+      children: [
+              CustomAppBar()
+      ],
+    );
   }
 }
+
