@@ -14,7 +14,8 @@ class NoteViewBody extends StatelessWidget {
           SizedBox(
             height: 50,
           ),
-          CustomAppBar()
+          CustomAppBar(),
+          NoteItem(),
         ],
       ),
     );
@@ -35,6 +36,11 @@ class NoteItem extends StatelessWidget {
         children: [
           ListTile(
             title: Text('Flutter tips'),
+            subtitle: Text('build your career'),
+            trailing: IconButton(
+              onPressed: () {},
+              icon: Icon(Icons.delete),
+            ),
           ),
         ],
       ),
