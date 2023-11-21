@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:progprojekt/views/widgets/note_view_body.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/foundation/key.dart';
+import 'package:progprojekt/views/widgets/custom_note_item.dart';
+
+
+
 
 class NoteView extends StatelessWidget{
   const NoteView({Key? key}) : super(key: key);
