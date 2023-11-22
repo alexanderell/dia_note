@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:progprojekt/views/widgets/custom_note_item.dart';
 import 'package:progprojekt/views/widgets/note_view_body.dart';
 
 class NoteView extends StatelessWidget {
@@ -7,8 +6,12 @@ class NoteView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: NoteViewBody(),
+    return Scaffold(
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {},
+        child: const Icon(Icons.add),
+      ),
+      body: const NoteViewBody(),
     );
   }
 }
