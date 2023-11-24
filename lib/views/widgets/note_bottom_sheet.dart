@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:progprojekt/constants.dart';
 import 'package:progprojekt/views/widgets/custom_text_field.dart';
 
 import 'custom_button.dart';
@@ -20,7 +19,9 @@ class NoteBottomSheet extends StatelessWidget {
             CustomTextField(
               hint: 'Title',
             ),
-            SizedBox(height: 16,),
+            SizedBox(
+              height: 16,
+            ),
             CustomTextField(
               hint: 'Notes',
               maxLines: 5,
@@ -28,6 +29,7 @@ class NoteBottomSheet extends StatelessWidget {
             SizedBox(
               height: 32,
             ),
+
             CustomButton(),
             SizedBox(
               height: 16,
