@@ -17,7 +17,7 @@ class CustomNoteItem extends StatelessWidget {
       child: Container(
         padding: const EdgeInsets.only(bottom: 24, top: 24, left: 10, right: 10),
         decoration: BoxDecoration(
-          color: const Color(0xffFFCC80),
+          color: const Color(0xffBF40BF),
           borderRadius: BorderRadius.circular(16),
         ),
         child: Column(
@@ -25,7 +25,7 @@ class CustomNoteItem extends StatelessWidget {
           children: [
             ListTile(
               title: const Text(
-                'Flutter tips',
+                'Rubrik',
                 style: TextStyle(
                   color: Colors.black,
                   fontSize: 26,
@@ -34,7 +34,7 @@ class CustomNoteItem extends StatelessWidget {
               subtitle: Padding(
                 padding: const EdgeInsets.only(top: 16),
                 child: Text(
-                  'build your career',
+                  'Innehåll',
                   style: TextStyle(
                     color: Colors.black.withOpacity(0.4),
                     fontSize: 18,

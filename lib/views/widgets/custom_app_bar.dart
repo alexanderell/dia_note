@@ -17,6 +17,9 @@ class CustomAppBar extends StatelessWidget {
             fontSize: 28,
           ),
         ),
+        SizedBox(
+          width: 721,
+        ),
         CustomIcon(
           icon: icon,
         ),
