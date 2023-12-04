@@ -1,6 +1,8 @@
 import 'package:bloc/bloc.dart';
 import 'package:meta/meta.dart';
 
+import '../../models/note_model.dart';
+
 
 part 'notes_state.dart';
 
