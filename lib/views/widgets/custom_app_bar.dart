@@ -2,10 +2,11 @@ import 'package:flutter/material.dart';
 import 'custom_icon.dart';
 
 class CustomAppBar extends StatelessWidget {
-  const CustomAppBar({Key? key, required this.title, required this.icon}) : super(key: key);
+  const CustomAppBar({Key? key, required this.title, required this.icon, this.onPressed}) : super(key: key);
 
   final String title;
   final IconData icon;
+  final void Function()? onPressed;
 
   @override
   Widget build(BuildContext context) {
@@ -17,10 +18,12 @@ class CustomAppBar extends StatelessWidget {
             fontSize: 28,
           ),
         ),
+        //För att det ska se bra ut i webb miljö
         SizedBox(
           width: 721,
         ),
         CustomIcon(
+          onPressed: onPressed,
           icon: icon,
         ),
       ],
