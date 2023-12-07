@@ -5,7 +5,10 @@ class ColorItem extends StatelessWidget{
 
   @override
   Widget build(BuildContext context){
-    return const CircleAvatar();
+    return const CircleAvatar(
+      radius: 38,
+      backgroundColor: Colors.blue,
+    );
   }
 }
 
@@ -14,6 +17,15 @@ class ColorListView extends StatelessWidget{
 
   @override
   Widget build(BuildContext context){
-    return SizedBox();
+    return SizedBox(
+      height: 38*2,
+      child: ListView.builder(
+          itemCount: 10,
+          scrollDirection: Axis.horizontal,
+          itemBuilder: (context, index){
+            return const ColorItem();
+          },
+      ),
+    );
   }
 }
