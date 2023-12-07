@@ -9,3 +9,11 @@ class ColorItem extends StatelessWidget{
   }
 }
 
+class ColorListView extends StatelessWidget{
+  const ColorListView({super.key});
+
+  @override
+  Widget build(BuildContext context){
+    return SizedBox();
+  }
+}
